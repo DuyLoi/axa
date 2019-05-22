@@ -1,0 +1,184 @@
+[
+  {
+	"flowId": "LOGIN",
+	"mainUrl": "https://app.accelus.com/",
+	"steps": [
+      {
+        "stepNo": "1",
+        "stepName": "Login",
+        "stepUrl": "https://app.accelus.com/",
+        "waitElement": "Username",
+        "stepElements": [
+          {
+            "id": "Username",
+            "value": "Nganhangtienphong2",
+            "type": "textfield",
+            "findBy": "ID",
+            "action": "SENDTEXT",
+            "order": "1"
+          },
+          {
+            "id": "Password",
+            "value": "Tpbank57@",
+            "type": "textfield",
+            "findBy": "ID",
+            "action": "SENDTEXT",
+            "order": "2"
+          },
+          {
+            "id": "SignIn",
+            "value": "",
+            "type": "button",
+            "findBy": "ID",
+            "action": "CLICK",
+            "waitElementID": "YES",
+			"waitElement": "accelus_components_application_IframeView_0",
+			"waitElementFrame": "//*[@id=\"accelus_components_application_IframeView_0\"]/iframe",
+            "order": "3"
+          }
+        ]
+      }
+	  ]
+  },
+  {
+    "flowId": "INDIVIDUAL",
+    "flowName": "Check AML for individual",
+    "noOfSteps": "5",
+    "requiredLogin": "YES",
+    "mainUrl": "https://app.accelus.com/",
+    "steps": [
+      {
+        "stepNo": "1",
+        "stepName": "Go2IndividualScreen",
+        "stepUrl": "https://app.accelus.com/",
+        "waitElement": "",
+        "stepElements": [
+          {
+            "id": "//*[text()=\"Individual\"]",
+            "value": "",
+            "type": "MENU_ITEM",
+            "findBy": "XPATH",
+            "action": "CLICK",
+            "waitElement": "",
+            "order": "1"
+          }
+        ]
+      },
+      {
+        "stepNo": "2",
+        "stepName": "Screen4Individual",
+        "stepUrl": "https://app.accelus.com/",
+        "waitElement": "",
+        "stepElements": [
+          {
+            "id": "//input[starts-with(@id, 'indium_view_form_ValidationTextBox')]",
+            "value": "",
+            "type": "textfield",
+            "findBy": "XPATH",
+            "action": "SENDTEXT",
+            "order": "1"
+          },
+          {
+            "id": "Enter",
+            "value": "",
+            "type": "Keyboard",
+            "findBy": "",
+            "action": "ENTER",
+            "waitElement": "uniqName_0_6",
+            "order": "2"
+          }
+        ]
+      },
+      {
+        "stepNo": "3",
+        "stepName": "ShowExportMenu",
+        "stepUrl": "",
+        "waitElement": "",
+        "stepElements": [
+          {
+            "id": "#uniqName_0_6 > a",
+            "value": "",
+            "type": "MENU_ITEM",
+            "findBy": "CSS_SELECTOR",
+            "action": "CLICK",
+            "order": "1"
+          }
+        ]
+      },
+      {
+        "stepNo": "4",
+        "stepName": "SelectCaseReport",
+        "stepUrl": "",
+        "waitElement": "",
+        "stepElements": [
+          {
+            "id": "//*[@id=\"indium_control_SimpleForm_0\"]/div[1]/ul[2]/li[1]/div/input",
+            "value": "",
+            "type": "RADIO_BUTTON",
+            "findBy": "XPATH",
+            "action": "CLICK",
+            "order": "1"
+          }
+        ]
+      },
+      {
+        "stepNo": "5",
+        "stepName": "ExportCaseReport",
+        "stepUrl": "",
+        "waitElement": "",
+        "stepElements": [
+          {
+            "id": "//span[text()=\"Export\"]",
+            "value": "",
+            "type": "BUTTON",
+            "findBy": "XPATH",
+            "action": "CLICK",
+            "order": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "flowId": "ORGANISATION",
+    "flowName": "Check AML for individual",
+    "noOfSteps": "6",
+    "requireLogin": "YES",
+    "mainUrl": "https://app.accelus.com/",
+    "steps": [
+      {
+        "stepNo": "1",
+        "stepName": "Login",
+        "stepUrl": "https://app.accelus.com/",
+        "waitElement": "Username",
+        "stepElements": [
+          {
+            "id": "Username",
+            "value": "Nganhangtienphong2",
+            "type": "textfield",
+            "findBy": "ID",
+            "action": "SENDTEXT",
+            "order": "1"
+          },
+          {
+            "id": "Password",
+            "value": "Tpbank57@",
+            "type": "textfield",
+            "findBy": "ID",
+            "action": "SENDTEXT",
+            "order": "2"
+          },
+          {
+            "id": "SignIn",
+            "value": "",
+            "type": "button",
+            "findBy": "ID",
+            "action": "CLICK",
+            "waitElement": "accelus_components_application_IframeView_0",
+            "order": "3"
+          }
+        ]
+      }
+    ]
+  }
+]
