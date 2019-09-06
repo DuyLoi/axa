@@ -1,1 +1,4 @@
 https://khoapham.vn/KhoaPhamTraining/android/cai-dat-android.pdf
+http://code5s.com/di-dong/android/huong-dan-ci-dat-android-sdk-v-eclipse.html
+https://stuff.mit.edu/afs/sipb/project/android/docs/sdk/installing/index.html
+http://code5s.com/di-dong/android/huong-dan-ci-dat-android-sdk-v-eclipse.html
